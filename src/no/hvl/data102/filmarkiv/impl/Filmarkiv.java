@@ -60,6 +60,7 @@ public class Filmarkiv implements FilmarkivADT {
 		for(int i = 0; i < antall; i++) {
 			if(filmArray[i].getTittel().contains(delstreng)) {
 				titelSok[index] = filmArray[i];
+				index++;
 			}
 		}
 		
@@ -72,6 +73,7 @@ public class Filmarkiv implements FilmarkivADT {
 		for(int i = 0; i < antall; i++) {
 			if(filmArray[i].getProdusent().contains(delstreng)) {
 				produsentSok[index] = filmArray[i];
+				index++;
 			}
 		}
 		

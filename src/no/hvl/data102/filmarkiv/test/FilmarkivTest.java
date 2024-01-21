@@ -2,7 +2,7 @@ package no.hvl.data102.filmarkiv.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import no.hvl.data102.filmarkiv.impl.Film;
@@ -15,7 +15,7 @@ public class FilmarkivTest {
 	private Filmarkiv filmarkiv;
     private Film film1, film2;
 
-    @Before
+    @BeforeEach
     public void setUp() throws Exception {
         filmarkiv = new Filmarkiv(10);
         film1 = new Film(1, 2001, "Produsent1", "Tittel1", "FilmSelskap1", Sjanger.ACTION);
