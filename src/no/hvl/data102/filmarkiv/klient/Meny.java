@@ -16,13 +16,13 @@ public class Meny {
 
 	public void start() {
 		
+		// legg inn en del forhåndsdefinerte filmer for å teste metodene
 		Film  film1 = new Film(1, 2001, "Produsent1", "Tittel1", "FilmSelskap1", Sjanger.ACTION);
 		Film  film2 = new Film(2, 2002, "Produsent2", "Tittel2", "FilmSelskap2", Sjanger.DRAMA);
 		
 		
 		filmarkiv.leggTilFilm(film1);
 		filmarkiv.leggTilFilm(film2);
-		// legg inn en del forhåndsdefinerte filmer for å teste metodene
 		// ..
 		// TODO
 	}
