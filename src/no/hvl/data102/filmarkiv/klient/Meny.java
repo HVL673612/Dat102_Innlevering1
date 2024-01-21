@@ -1,6 +1,7 @@
 package no.hvl.data102.filmarkiv.klient;
 
 import no.hvl.data102.filmarkiv.adt.FilmarkivADT;
+import java.io.*;
 import no.hvl.data102.filmarkiv.impl.Film;
 import no.hvl.data102.filmarkiv.impl.Sjanger;
 
@@ -25,6 +26,17 @@ public class Meny {
 		filmarkiv.leggTilFilm(film2);
 		// ..
 		// TODO
+		
+		//meny ting
+		Scanner scanner = new Scanner(System.in);
+		while(true) {
+			System.out.println("1. Ligg till Film");
+			/*
+			 * resten av meny valgene nedover her 
+			 */
+			int valg = scanner.nextInt();
+
+		}
 	}
 
 }
