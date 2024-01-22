@@ -13,11 +13,26 @@ public class Tekstgrensesnitt {
 		 Scanner scanner = new Scanner(System.in);
 		    System.out.println("Enter film number:");
 		    int filmNr = scanner.nextInt();
-		    // ... (similarly read other film details: title, producer, etc.)
+		    
+		    System.out.println("Enter utgivelse år");
+		    int lanserigsAar = scanner.nextInt();
+		    
+		    System.out.println("Enter Produsent");
+		    String prdusent = scanner.next();
+		    
+		    System.out.println("Enter Tittel");
+		    String tittel = scanner.next();
+		    
+		    System.out.println("eneter Filmselskap");
+		    String filmSelskap = scanner.next();
+		    
 		    System.out.println("Enter sjanger (e.g., ACTION, DRAMA):");
 		    String genre = scanner.next();
 		    Sjanger sjanger = Sjanger.valueOf(genre.toUpperCase());
-		    return null;  // Fill in other parameters
+		    
+		    return new Film(filmNr, lanserigsAar, prdusent, tittel, filmSelskap, sjanger) ;
+		   
+			
 		}
 	
 
