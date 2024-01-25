@@ -22,14 +22,7 @@ public class Film {
 		this.setProdusent(produsent);
 		this.setTittel(tittel);
 		this.setSjanger(sjanger);
-		this.setFilmSelskap(filmSelskap);
-/*		
- *		this.filmNr 		= filmNr;
- *		this.lanserigsAar 	= lanserigsAar;
- *		this.produsent 		= produsent;
- *		this.tittel			= tittel;
- *		this.sjanger		= sjanger;
-*/		
+		this.setFilmSelskap(filmSelskap);		
 	}
 
 	public int getFilmNr() {
