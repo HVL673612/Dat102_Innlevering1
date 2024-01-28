@@ -16,29 +16,29 @@ public class Tekstgrensesnitt {
 		Scanner scanner = new Scanner(System.in);
 		 
 		try {
-		    System.out.println("Enter film number:");
+		    System.out.println("Skriv inn film nummer: ");
 		    filmNr = scanner.nextInt();
 		    scanner.nextLine();
 		 
-			System.out.println("Enter utgivelse år");
+			System.out.println("Skriv inn utgivelse år: ");
 		    lanserigsAar = scanner.nextInt();
 		    scanner.nextLine();
 		} catch(InputMismatchException e) {
-			System.out.println("inputt error, input et number");
+			System.out.println("Feil inndata, skriv et nummer: ");
 			scanner.nextLine();
 			return null;
 		}
 		    
-		    System.out.println("Enter Produsent");
+		    System.out.println("Skriv inn produsent: ");
 		    String prdusent = scanner.nextLine();
 		    
-		    System.out.println("Enter Tittel");
+		    System.out.println("Skriv inn tittel: ");
 		    String tittel = scanner.nextLine();
 		    
-		    System.out.println("eneter Filmselskap");
+		    System.out.println("Skriv inn filmselskap: ");
 		    String filmSelskap = scanner.nextLine();
 		    
-		    System.out.println("Enter sjanger (e.g., ACTION, DRAMA):");
+		    System.out.println("Skriv inn sjanger (e.g., ACTION, DRAMA): ");
 		    String genre = scanner.nextLine();
 		    Sjanger sjanger = Sjanger.valueOf(genre.toUpperCase());
 //		    scanner.close();
@@ -74,7 +74,7 @@ public class Tekstgrensesnitt {
 		Film[] filmerMedDelStreng = arkiv.soekProdusent(delstreng);
 		
 		if(filmerMedDelStreng.length == 0) {
-			System.out.println("Ingen Filme produsenter med delstrengen "+ delstreng);
+			System.out.println("Ingen filmprodusenter med delstrengen " + delstreng);
 		}else {
 			for(Film film: filmerMedDelStreng) {
 				skrivUtFilm(film);
@@ -85,10 +85,10 @@ public class Tekstgrensesnitt {
 	// Skriver ut en enkel statistikk som inneholder antall filmer totalt
 	// og hvor mange det er i hver sjanger.
 	public void skrivUtStatistikk(FilmarkivADT arkiv) {
-		System.out.println("antall Filmer i arkivet: "+ arkiv.antall());
+		System.out.println("Antall Filmer i arkivet: " + arkiv.antall());
 		
 		for(Sjanger sjanger: Sjanger.values()) {
-			System.out.println("antall "+sjanger+ "  Filmer: "+ arkiv.antall(sjanger));
+			System.out.println("Antall " + sjanger + " Filmer: " + arkiv.antall(sjanger));
 		}
 	}
 	// osv ... andre metoder

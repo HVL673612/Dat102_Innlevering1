@@ -32,15 +32,15 @@ public class Meny {
 		//meny ting
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
-			System.out.println("press 1 og enter for å Ligge till Film");
-			System.out.println("press 2 og enter for tittel søk");
-			System.out.println("press 3 og enter for produsent søk");
-			System.out.println("press 4 og enter for statestikk");
-			System.out.println("press 5");
-			System.out.println("press 6");
-			System.out.println("press 7");
-			System.out.println("press 8");
-			System.out.println("press 9 og enter for å stenge scanner");
+			System.out.println("Tast 1 for å legge til en film");
+			System.out.println("Tast 2 for søke etter tittel");
+			System.out.println("Tast 3 for søke etter produsent");
+			System.out.println("Tast 4 for filmarkiv");
+			System.out.println("Tast 5");
+			System.out.println("Tast 6");
+			System.out.println("Tast 7");
+			System.out.println("Tast 8");
+			System.out.println("Tast 9 for å stenge scanner");
 			
 			int valg = scanner.nextInt();
 			
@@ -50,12 +50,12 @@ public class Meny {
 				filmarkiv.leggTilFilm(nyfilm);
 				break;
 			case 2:
-				System.out.println("input for tittelsøk");
+				System.out.println("Skriv inn tittel: ");
 				String tittelsok = scanner.next();
 				tekstgr.skrivUtFilmDelstrengITittel(filmarkiv,tittelsok);
 				break;
 			case 3:
-				System.out.println("Innput produsent");
+				System.out.println("Skriv inn produsent: ");
 				String produsentsok = scanner.next();
 				tekstgr.skrivUtFilmProdusent(filmarkiv, produsentsok);
 				break;
