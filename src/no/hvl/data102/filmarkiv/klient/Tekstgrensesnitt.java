@@ -38,7 +38,7 @@ public class Tekstgrensesnitt {
 		    System.out.println("Skriv inn filmselskap: ");
 		    String filmSelskap = scanner.nextLine();
 		    
-		    System.out.println("Skriv inn sjanger (ACTION, DRAMA, HISTORY, SCI-FI, ROMANCE): ");
+		    System.out.println("Skriv inn sjanger (ACTION, ANIMATION, DRAMA, HISTORY, SCI-FI, ROMANCE): ");
 		    String genre = scanner.nextLine();
 		    Sjanger sjanger = Sjanger.valueOf(genre.toUpperCase());
 //		    scanner.close();
