@@ -92,5 +92,12 @@ public class Tekstgrensesnitt {
 		}
 	}
 	// osv ... andre metoder
+	public void sjekkFilmSlettet(int filmNr, boolean sjekk) {
+		if(sjekk) {
+			System.out.println("Film nr. " + filmNr + " er slettet");
+		} else {
+			System.out.println("Feil. Film nr. " + filmNr + " er ikke slettet");
+		}
+	}
 
 }
