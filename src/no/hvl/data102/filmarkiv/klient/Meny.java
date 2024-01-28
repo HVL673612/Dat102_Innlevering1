@@ -39,6 +39,7 @@ public class Meny {
 			System.out.println("Tast 5 for å slette film");
 			System.out.println("Tast 6 for å stenge scanner");
 			
+			System.out.println();
 			int valg = scanner.nextInt();
 			
 			switch(valg) {
@@ -48,18 +49,22 @@ public class Meny {
 				break;
 			case 2:
 				System.out.println("Skriv inn tittel: ");
+				System.out.println();
 				String tittelsok = scanner.next();
 				tekstgr.skrivUtFilmDelstrengITittel(filmarkiv,tittelsok);
 				break;
 			case 3:
 				System.out.println("Skriv inn produsent: ");
+				System.out.println();
 				String produsentsok = scanner.next();
 				tekstgr.skrivUtFilmProdusent(filmarkiv, produsentsok);
 				break;
 			case 4:
 				tekstgr.skrivUtStatistikk(filmarkiv);
+				System.out.println();
 			case 5:
 				System.out.println("Skriv inn filmnr: ");
+				System.out.println();
 				int filmNr = scanner.nextInt();
 				boolean sjekk = filmarkiv.slettFilm(filmNr);
 				tekstgr.sjekkFilmSlettet(filmNr, sjekk);
