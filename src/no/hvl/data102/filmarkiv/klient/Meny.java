@@ -33,8 +33,8 @@ public class Meny {
 		Scanner scanner = new Scanner(System.in);
 		while(true) {
 			System.out.println("Tast 1 for å legge til en film");
-			System.out.println("Tast 2 for søke etter tittel");
-			System.out.println("Tast 3 for søke etter produsent");
+			System.out.println("Tast 2 for å søke etter tittel");
+			System.out.println("Tast 3 for å søke etter produsent");
 			System.out.println("Tast 4 for filmarkiv");
 			System.out.println("Tast 5 for å slette film");
 			System.out.println("Tast 6");
